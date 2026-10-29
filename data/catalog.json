@@ -31,6 +31,7 @@
       "id": "orca",
       "name": "Orca",
       "url": "https://www.onorca.dev/",
+      "icon": "assets/icons/orca.png",
       "type": "software",
       "description": "Môi trường desktop để chạy nhiều AI coding agent song song (Claude Code, Codex, OpenCode, Cursor CLI, Copilot...): mỗi agent làm việc trong một git worktree riêng nên không đụng file của nhau, sau đó so sánh diff và chọn kết quả tốt nhất.",
       "tags": [
@@ -53,6 +54,7 @@
       "id": "antigravity-cli",
       "name": "Antigravity CLI",
       "url": "https://antigravity.google/",
+      "icon": "assets/icons/antigravity-cli.png",
       "type": "tool",
       "description": "Phiên bản dòng lệnh (lệnh agy) của nền tảng lập trình agent-first Antigravity của Google: mang khả năng agent của Antigravity 2.0 — suy luận nhiều bước, sửa nhiều file, gọi công cụ — vào thẳng terminal, thay thế Gemini CLI.",
       "tags": [
@@ -76,6 +78,7 @@
       "id": "opencode",
       "name": "OpenCode",
       "url": "https://opencode.ai/",
+      "icon": "assets/icons/opencode.svg",
       "type": "tool",
       "description": "AI coding agent mã nguồn mở chạy trong terminal (cũng có app desktop và extension IDE): viết, sửa và debug code bằng ngôn ngữ tự nhiên, kết nối hơn 75 nhà cung cấp model như Claude, GPT, Gemini hoặc model local qua Ollama, không bị khoá vào một hãng duy nhất.",
       "tags": [
@@ -99,6 +102,7 @@
       "id": "git",
       "name": "Git",
       "url": "https://git-scm.com/",
+      "icon": "assets/icons/git.svg",
       "type": "tool",
       "description": "Hệ thống quản lý phiên bản phân tán miễn phí và mã nguồn mở (trang chính thức git-scm.com): theo dõi lịch sử thay đổi code, làm việc với nhánh (branch), merge và cộng tác qua GitHub/GitLab.",
       "tags": [
@@ -120,6 +124,7 @@
       "id": "bruno",
       "name": "Bruno",
       "url": "https://www.usebruno.com/",
+      "icon": "assets/icons/bruno.svg",
       "type": "software",
       "description": "API client mã nguồn mở thay thế Postman/Insomnia: chạy offline, lưu collection thành các file text .bru ngay trong thư mục project nên quản lý phiên bản bằng Git dễ dàng; hỗ trợ REST, GraphQL, gRPC và WebSocket.",
       "tags": [
@@ -142,6 +147,7 @@
       "id": "intellij-idea",
       "name": "IntelliJ IDEA",
       "url": "https://www.jetbrains.com/idea/",
+      "icon": "assets/icons/intellijidea.svg",
       "type": "software",
       "description": "IDE hàng đầu cho Java và Kotlin của JetBrains: gợi ý code thông minh, phân tích tĩnh, refactor mạnh, tích hợp sẵn debugger, profiler, công cụ database và HTTP Client.",
       "tags": [
@@ -164,6 +170,7 @@
       "id": "sublime-text",
       "name": "Sublime Text",
       "url": "https://www.sublimetext.com/",
+      "icon": "assets/icons/sublimetext.svg",
       "type": "software",
       "description": "Trình soạn thảo code siêu nhẹ và khởi động cực nhanh: Goto Anything, chỉnh sửa nhiều vị trí cùng lúc, Command Palette, tuỳ biến sâu bằng JSON và mở rộng bằng plugin Python qua Package Control.",
       "tags": [
@@ -185,6 +192,7 @@
       "id": "internet-download-manager",
       "name": "Internet Download Manager (IDM)",
       "url": "https://www.internetdownloadmanager.com/",
+      "icon": "assets/icons/internet-download-manager.png",
       "type": "software",
       "description": "Trình quản lý tải xuống cho Windows: chia file thành nhiều luồng tải song song để tăng tốc, tự tải tiếp khi đứt mạng, hẹn giờ tải và tự bắt link tải từ Chrome, Edge, Firefox.",
       "tags": [
@@ -204,6 +212,7 @@
       "id": "navicat-premium",
       "name": "Navicat Premium",
       "url": "https://www.navicat.com/en/products/navicat-premium",
+      "icon": "assets/icons/navicat-premium.png",
       "type": "software",
       "description": "Công cụ quản lý và phát triển cơ sở dữ liệu tất cả trong một: kết nối đồng thời MySQL, PostgreSQL, MariaDB, SQL Server, Oracle, SQLite, MongoDB, Redis và Snowflake từ một ứng dụng duy nhất, hỗ trợ thiết kế mô hình dữ liệu, đồng bộ và di chuyển dữ liệu.",
       "tags": [
@@ -227,6 +236,7 @@
       "id": "habblaud",
       "name": "Habblaud",
       "url": "https://habblaud.com/",
+      "icon": "assets/icons/habblaud.png",
       "type": "software",
       "description": "Văn phòng ảo pixel-art cho các agent Claude Code và Codex: mỗi project là một phòng, mỗi agent là một nhân vật hiển thị hoạt động trực tiếp, kèm thống kê token, chi phí ước tính, thời gian làm việc và mức dùng 5 giờ/tuần. Chạy 100% local, không telemetry.",
       "tags": [

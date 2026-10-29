@@ -2,6 +2,8 @@ const $=s=>document.querySelector(s);
 const state={data:null,filter:'all',query:'',sort:'newest',view:localStorage.getItem('cianx-view')||'grid',maxDate:''};
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const favicon=url=>{try{return `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&sz=128`}catch{return 'favicon.svg'}};
+const iconFor=i=>i.icon||favicon(i.url);
+const iconBox=i=>`<div class="icon-box"><span class="icon-letter" aria-hidden="true">${esc(i.name.charAt(0).toUpperCase())}</span><img src="${esc(iconFor(i))}" alt="" loading="lazy" onerror="this.remove()"></div>`;
 const cat=id=>state.data.categories.find(c=>c.id===id)||{label:id,icon:'🔗'};
 const priceClass=p=>({'Free':'price-free','Freemium':'price-freemium','Paid':'price-paid'}[p]||'');
 
@@ -10,7 +12,7 @@ function badges(i){
 }
 function featureHTML(i){
   return `<article class="feature-card" data-id="${esc(i.id)}" tabindex="0" role="button" aria-label="${esc(i.name)}">
-    <div class="icon-box"><img src="${favicon(i.url)}" alt="" loading="lazy" onerror="this.src='favicon.svg'"></div>
+    ${iconBox(i)}
     <div class="feature-main">
       <h3>${esc(i.name)}</h3>
       <div class="type">${esc(cat(i.type).icon)} ${esc(cat(i.type).label)} · ${esc((i.platform||[]).join(' · '))}</div>
@@ -24,7 +26,7 @@ function cardHTML(i){
   return `<article class="card" data-id="${esc(i.id)}" tabindex="0" role="button" aria-label="${esc(i.name)}">
     ${badges(i)}
     <div class="card-head">
-      <div class="icon-box"><img src="${favicon(i.url)}" alt="" loading="lazy" onerror="this.src='favicon.svg'"></div>
+      ${iconBox(i)}
       <div><h3>${esc(i.name)}</h3><div class="type">${esc(cat(i.type).icon)} ${esc(cat(i.type).label)}</div></div>
     </div>
     <p>${esc(i.description)}</p>
@@ -69,7 +71,7 @@ function render(){
 function openDetail(id){
   const i=state.data.items.find(x=>x.id===id);if(!i)return;
   $('#detailBody').innerHTML=`
-    <div class="card-head"><div class="icon-box"><img src="${favicon(i.url)}" alt="" onerror="this.src='favicon.svg'"></div>
+    <div class="card-head">${iconBox(i)}
     <div><h3 style="margin:0">${esc(i.name)}</h3><div class="type">${esc(cat(i.type).icon)} ${esc(cat(i.type).label)}${i.featured?' · ★ Nổi bật':''}</div></div></div>
     <p class="desc">${esc(i.description)}</p>
     ${i.note?`<p class="desc"><b style="color:var(--text)">Ghi chú:</b> ${esc(i.note)}</p>`:''}
