@@ -28,6 +28,33 @@
   ],
   "items": [
     {
+      "id": "openvpn",
+      "name": "OpenVPN",
+      "url": "https://openvpn.net/",
+      "icon": "assets/icons/openvpn.png",
+      "type": "software",
+      "description": "Giải pháp VPN mã nguồn mở lâu đời và phổ biến nhất: giao thức OpenVPN cùng phần mềm client/server chạy trên gần như mọi nền tảng, bảo mật bằng mã hoá TLS/SSL mạnh. Bản Community miễn phí cho phép tự dựng server VPN riêng; hãng cũng có bản thương mại Access Server (tự host) và CloudConnexa (cloud) cho doanh nghiệp.",
+      "description_en": "The long-standing, widely used open-source VPN solution: the OpenVPN protocol plus client/server software that runs on almost every platform, secured with strong TLS/SSL encryption. The free Community edition lets you run your own VPN server; the commercial Access Server (self-hosted) and CloudConnexa (cloud) editions target businesses.",
+      "tags": [
+        "VPN",
+        "Security",
+        "Networking",
+        "Open Source"
+      ],
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "pricing": "Freemium",
+      "featured": false,
+      "dateAdded": "2026-10-29",
+      "note": "Community Edition theo giấy phép GPL, miễn phí hoàn toàn; client chính thức OpenVPN Connect tải miễn phí — bản thương mại tính phí theo số kết nối đồng thời.",
+      "note_en": "The Community Edition is fully free under the GPL and the official OpenVPN Connect client is a free download; commercial editions are priced per concurrent connection."
+    },
+    {
       "id": "orca",
       "name": "Orca",
       "url": "https://www.onorca.dev/",
