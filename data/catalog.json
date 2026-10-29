@@ -28,6 +28,32 @@
   ],
   "items": [
     {
+      "id": "claude-code-game-studios",
+      "name": "Claude Code Game Studios",
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "icon": "assets/icons/claude-code-game-studios.png",
+      "type": "skill",
+      "description": "Template biến một phiên làm việc Claude Code thành cả một studio phát triển game: 49 AI agent chuyên môn (thiết kế, lập trình, đồ hoạ, âm thanh, cốt truyện, QA, sản xuất) tổ chức theo 3 cấp như studio thật, kèm 74 skill/lệnh workflow (/start, /design-system, /dev-story...), 15 hook kiểm tra tự động, 14 rule chuẩn code và 62 template tài liệu. Hướng tới game Godot, Unity, Unreal — bạn vẫn là người ra quyết định, còn \"studio\" lo quy trình, review và cổng chất lượng.",
+      "description_en": "A template that turns a single Claude Code session into a full game development studio: 49 specialized AI agents (design, programming, art, audio, narrative, QA, production) organized into a three-tier hierarchy like a real studio, plus 74 workflow skills and commands (/start, /design-system, /dev-story...), 15 automated validation hooks, 14 coding-standard rules and 62 document templates. Built for Godot, Unity and Unreal games — you still make every decision while the \"studio\" handles process, reviews and quality gates.",
+      "tags": [
+        "AI Agent",
+        "Claude Code",
+        "Game Dev",
+        "Godot",
+        "Unity"
+      ],
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "pricing": "Free",
+      "featured": false,
+      "dateAdded": "2026-10-30",
+      "note": "Mã nguồn mở MIT (tác giả Donchitos). Cách dùng: clone repo làm template cho project game, mở Claude Code tại thư mục gốc rồi chạy /start. Cần Git, Python 3 và Bash (Windows dùng Git Bash kèm Git for Windows).",
+      "note_en": "Open source under MIT (by Donchitos). Usage: clone the repo as a template for your game project, open Claude Code at the project root and run /start. Requires Git, Python 3 and Bash (on Windows, the Bash bundled with Git for Windows)."
+    },
+    {
       "id": "superpowers",
       "name": "Superpowers",
       "url": "https://github.com/obra/superpowers",
