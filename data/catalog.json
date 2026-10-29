@@ -28,6 +28,113 @@
   ],
   "items": [
     {
+      "id": "bruno",
+      "name": "Bruno",
+      "url": "https://www.usebruno.com/",
+      "type": "software",
+      "description": "API client mã nguồn mở thay thế Postman/Insomnia: chạy offline, lưu collection thành các file text .bru ngay trong thư mục project nên quản lý phiên bản bằng Git dễ dàng; hỗ trợ REST, GraphQL, gRPC và WebSocket.",
+      "tags": [
+        "API",
+        "REST",
+        "Git",
+        "Open Source"
+      ],
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "pricing": "Freemium",
+      "featured": false,
+      "dateAdded": "2026-10-29",
+      "note": "Bản mã nguồn mở MIT miễn phí, không cần tài khoản, không đồng bộ cloud; có thêm các bản trả phí Golden/Ultimate."
+    },
+    {
+      "id": "intellij-idea",
+      "name": "IntelliJ IDEA",
+      "url": "https://www.jetbrains.com/idea/",
+      "type": "software",
+      "description": "IDE hàng đầu cho Java và Kotlin của JetBrains: gợi ý code thông minh, phân tích tĩnh, refactor mạnh, tích hợp sẵn debugger, profiler, công cụ database và HTTP Client.",
+      "tags": [
+        "IDE",
+        "Java",
+        "Kotlin",
+        "JetBrains"
+      ],
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "pricing": "Freemium",
+      "featured": false,
+      "dateAdded": "2026-10-29",
+      "note": "Tính năng lõi miễn phí, kèm 30 ngày dùng thử bản Ultimate (trả phí dạng thuê bao)."
+    },
+    {
+      "id": "sublime-text",
+      "name": "Sublime Text",
+      "url": "https://www.sublimetext.com/",
+      "type": "software",
+      "description": "Trình soạn thảo code siêu nhẹ và khởi động cực nhanh: Goto Anything, chỉnh sửa nhiều vị trí cùng lúc, Command Palette, tuỳ biến sâu bằng JSON và mở rộng bằng plugin Python qua Package Control.",
+      "tags": [
+        "Code",
+        "Editor",
+        "Plugin"
+      ],
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "pricing": "Paid",
+      "featured": false,
+      "dateAdded": "2026-10-29",
+      "note": "Tải và dùng thử miễn phí không giới hạn thời gian; cần mua license để sử dụng lâu dài."
+    },
+    {
+      "id": "internet-download-manager",
+      "name": "Internet Download Manager (IDM)",
+      "url": "https://www.internetdownloadmanager.com/",
+      "type": "software",
+      "description": "Trình quản lý tải xuống cho Windows: chia file thành nhiều luồng tải song song để tăng tốc, tự tải tiếp khi đứt mạng, hẹn giờ tải và tự bắt link tải từ Chrome, Edge, Firefox.",
+      "tags": [
+        "Download",
+        "IDM",
+        "Windows"
+      ],
+      "platform": [
+        "Windows"
+      ],
+      "pricing": "Paid",
+      "featured": false,
+      "dateAdded": "2026-10-29",
+      "note": "Dùng thử miễn phí 30 ngày, sau đó cần mua license (có bản 1 năm và trọn đời). Chỉ hỗ trợ Windows."
+    },
+    {
+      "id": "navicat-premium",
+      "name": "Navicat Premium",
+      "url": "https://www.navicat.com/en/products/navicat-premium",
+      "type": "software",
+      "description": "Công cụ quản lý và phát triển cơ sở dữ liệu tất cả trong một: kết nối đồng thời MySQL, PostgreSQL, MariaDB, SQL Server, Oracle, SQLite, MongoDB, Redis và Snowflake từ một ứng dụng duy nhất, hỗ trợ thiết kế mô hình dữ liệu, đồng bộ và di chuyển dữ liệu.",
+      "tags": [
+        "Database",
+        "SQL",
+        "MySQL",
+        "PostgreSQL",
+        "DBA"
+      ],
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "pricing": "Paid",
+      "featured": false,
+      "dateAdded": "2026-10-29",
+      "note": "Có bản dùng thử 14 ngày; ngoài bản Premium còn có bản riêng cho từng loại database và các cấp Lite/Standard/Enterprise."
+    },
+    {
       "id": "habblaud",
       "name": "Habblaud",
       "url": "https://habblaud.com/",
