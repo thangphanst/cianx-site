@@ -10,18 +10,6 @@ const priceClass=p=>({'Free':'price-free','Freemium':'price-freemium','Paid':'pr
 function badges(i){
   return i.featured?'<div class="badges"><span class="badge badge-star">★ Nổi bật</span></div>':'';
 }
-function featureHTML(i){
-  return `<article class="feature-card" data-id="${esc(i.id)}" tabindex="0" role="button" aria-label="${esc(i.name)}">
-    ${iconBox(i)}
-    <div class="feature-main">
-      <h3>${esc(i.name)}</h3>
-      <div class="type">${esc(cat(i.type).icon)} ${esc(cat(i.type).label)} · ${esc((i.platform||[]).join(' · '))}</div>
-      <p>${esc(i.description)}</p>
-      <div class="tags">${(i.tags||[]).slice(0,5).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div>
-    </div>
-    <span class="price ${priceClass(i.pricing)}" style="align-self:flex-start">${esc(i.pricing||'')}</span>
-  </article>`;
-}
 function cardHTML(i){
   return `<article class="card" data-id="${esc(i.id)}" tabindex="0" role="button" aria-label="${esc(i.name)}">
     ${badges(i)}
@@ -37,21 +25,17 @@ function cardHTML(i){
 function bindCards(scope){
   scope.querySelectorAll('[data-id]').forEach(c=>{c.onclick=()=>openDetail(c.dataset.id);c.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openDetail(c.dataset.id)}}});
 }
-function renderFeatured(){
-  const feat=state.data.items.filter(i=>i.featured);
-  const show=feat.length>0&&state.filter==='all'&&!state.query;
-  $('#featuredSection').hidden=!show;
-  if(show){$('#featuredGrid').innerHTML=feat.map(featureHTML).join('');bindCards($('#featuredGrid'));}
-}
 function renderFilters(){
   const counts={};state.data.items.forEach(i=>counts[i.type]=(counts[i.type]||0)+1);
-  const all=[{id:'all',label:'Tất cả',icon:'✦'},...state.data.categories];
-  $('#filters').innerHTML=all.map(c=>`<button class="chip" data-id="${esc(c.id)}" aria-pressed="${state.filter===c.id}">${esc(c.icon)} ${esc(c.label)} <span class="n">${c.id==='all'?state.data.items.length:(counts[c.id]||0)}</span></button>`).join('');
+  const featCount=state.data.items.filter(i=>i.featured).length;
+  const all=[{id:'all',label:'Tất cả',icon:'✦'},...(featCount?[{id:'featured',label:'Nổi bật',icon:'★'}]:[]),...state.data.categories];
+  $('#filters').innerHTML=all.map(c=>`<button class="chip" data-id="${esc(c.id)}" aria-pressed="${state.filter===c.id}">${esc(c.icon)} ${esc(c.label)} <span class="n">${c.id==='all'?state.data.items.length:c.id==='featured'?featCount:(counts[c.id]||0)}</span></button>`).join('');
   document.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{state.filter=b.dataset.id;renderFilters();render()});
 }
 function filtered(){
   let items=[...state.data.items];
-  if(state.filter!=='all')items=items.filter(i=>i.type===state.filter);
+  if(state.filter==='featured')items=items.filter(i=>i.featured);
+  else if(state.filter!=='all')items=items.filter(i=>i.type===state.filter);
   if(state.query){const q=state.query.toLowerCase();items=items.filter(i=>[i.name,i.description,(i.tags||[]).join(' '),(i.platform||[]).join(' '),cat(i.type).label].join(' ').toLowerCase().includes(q))}
   if(state.sort==='name')items.sort((a,b)=>a.name.localeCompare(b.name));
   else if(state.sort==='featured')items.sort((a,b)=>(b.featured-a.featured)||String(b.dateAdded).localeCompare(a.dateAdded));
@@ -59,10 +43,7 @@ function filtered(){
   return items;
 }
 function render(){
-  renderFeatured();
   let items=filtered();
-  // In the default view, featured items live in their own section — don't duplicate them in the grid.
-  if(state.filter==='all'&&!state.query)items=items.filter(i=>!i.featured);
   $('#resultCount').textContent=state.query||state.filter!=='all'?`${items.length} kết quả`:`${state.data.items.length} mục đã lưu`;
   $('#empty').hidden=items.length>0||filtered().length>0;
   if(!items.length&&filtered().length)$('#grid').innerHTML='';
