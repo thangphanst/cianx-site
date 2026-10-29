@@ -1,7 +1,8 @@
 # Cache policy for cianx.site (Cloudflare Pages):
-# HTML, data and assets must be revalidated on every visit so design/data
-# updates show up immediately on mobile browsers instead of being cached
-# for hours (Pages' default asset cache is max-age=14400).
+# NOTE: Pages overrides Cache-Control from _headers for static assets
+# (they always go out as max-age=14400). These rules still document intent
+# and cover HTML/data; the real anti-stale mechanism for CSS/JS is the
+# ?v=N version query in index.html — bump N on every asset change.
 /
   Cache-Control: public, max-age=0, must-revalidate
 /index.html

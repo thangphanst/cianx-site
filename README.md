@@ -20,8 +20,8 @@ Thư viện / catalog cá nhân của Cian: phần mềm, extension, skill, côn
 
 ## Chống cache (quan trọng)
 
-- File `_headers` đặt `Cache-Control: max-age=0, must-revalidate` cho HTML, `data/` và `assets/` — trình duyệt (đặc biệt là điện thoại) phải kiểm tra bản mới mỗi lần mở trang, tránh kẹt bản cũ nhiều giờ như mặc định của Pages (assets từng bị cache max-age=14400).
-- Lớp bảo hiểm thứ hai: `index.html` gọi CSS/JS kèm `?v=N`. **Mỗi lần sửa `assets/styles.css` hoặc `assets/app.js` phải tăng N lên 1** trong index.html khi commit.
+- HTML và `data/catalog.json` được Pages trả với `max-age=0, must-revalidate` sẵn (và app.js fetch JSON bằng `cache:'no-cache'`) nên nội dung luôn mới. File `_headers` cũng khai báo rõ chính sách này.
+- Riêng CSS/JS tĩnh: **Pages ghi đè Cache-Control thành max-age=14400 và bỏ qua `_headers`** (đã kiểm chứng trên bản live) — nên cơ chế chống kẹt cache thật sự là `?v=N` trong `index.html`: HTML luôn mới → trỏ tới URL CSS/JS có phiên bản mới → điện thoại buộc phải tải bản mới. **Mỗi lần sửa `assets/styles.css` hoặc `assets/app.js` phải tăng N lên 1** trong index.html trong cùng commit.
 
 ## Cloudflare Pages settings
 
