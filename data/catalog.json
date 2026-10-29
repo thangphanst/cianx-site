@@ -1,27 +1,22 @@
 {
   "categories": [
     {
-      "icon": "💻",
       "id": "software",
       "label": "Phần mềm"
     },
     {
-      "icon": "🧩",
       "id": "extension",
       "label": "Extension"
     },
     {
-      "icon": "⚡",
       "id": "skill",
       "label": "Skill"
     },
     {
-      "icon": "🌐",
       "id": "website",
       "label": "Website"
     },
     {
-      "icon": "🛠️",
       "id": "tool",
       "label": "Công cụ / AI"
     }
