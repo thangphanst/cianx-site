@@ -40,6 +40,9 @@ button{font:inherit}
 .topnav a{text-decoration:none;color:var(--muted);font-size:14.5px;font-weight:500}
 .topnav a:hover{color:var(--text)}
 .topbar-actions{margin-left:auto;display:flex;align-items:center;gap:10px}
+.lang-switch{display:flex;background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:2px;gap:2px}
+.lang-switch button{border:0;background:transparent;color:var(--muted);font-family:Inter,sans-serif;font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:999px;cursor:pointer;transition:all .15s}
+.lang-switch button[aria-pressed="true"]{background:var(--accent);color:var(--accent-text)}
 .count-pill{font-size:13px;font-weight:600;color:var(--muted);background:var(--surface2);border:1px solid var(--border);padding:5px 12px;border-radius:999px}
 .icon-btn{border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:11px;padding:8px 12px;cursor:pointer;transition:border-color .15s,transform .15s}
 .icon-btn:hover{border-color:var(--border-strong);transform:translateY(-1px)}
@@ -169,6 +172,7 @@ button.copy{background:var(--surface2);color:var(--text);border:1px solid var(--
   .topbar-inner{padding:11px 16px;gap:14px}
   .logo{font-size:20px}
   .count-pill{display:none}
+  .lang-switch button{padding:4px 8px}
   .hero{padding:20px 0 2px}
   .hero-badge{font-size:12px;padding:5px 12px}
   .hero h1{font-size:clamp(29px,8.6vw,38px);margin:18px 0 12px}

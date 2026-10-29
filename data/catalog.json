@@ -2,23 +2,28 @@
   "categories": [
     {
       "id": "software",
-      "label": "Phần mềm"
+      "label": "Phần mềm",
+      "label_en": "Software"
     },
     {
       "id": "extension",
-      "label": "Extension"
+      "label": "Extension",
+      "label_en": "Extension"
     },
     {
       "id": "skill",
-      "label": "Skill"
+      "label": "Skill",
+      "label_en": "Skill"
     },
     {
       "id": "website",
-      "label": "Website"
+      "label": "Website",
+      "label_en": "Website"
     },
     {
       "id": "tool",
-      "label": "Công cụ / AI"
+      "label": "Công cụ / AI",
+      "label_en": "Tools / AI"
     }
   ],
   "items": [
@@ -29,6 +34,7 @@
       "icon": "assets/icons/orca.png",
       "type": "software",
       "description": "Môi trường desktop để chạy nhiều AI coding agent song song (Claude Code, Codex, OpenCode, Cursor CLI, Copilot...): mỗi agent làm việc trong một git worktree riêng nên không đụng file của nhau, sau đó so sánh diff và chọn kết quả tốt nhất.",
+      "description_en": "A desktop environment for running multiple AI coding agents in parallel (Claude Code, Codex, OpenCode, Cursor CLI, Copilot...): each agent works in its own git worktree so they never touch each other's files, then you compare the diffs and pick the best result.",
       "tags": [
         "AI Agent",
         "Orchestrator",
@@ -43,7 +49,8 @@
       "pricing": "Free",
       "featured": false,
       "dateAdded": "2026-10-29",
-      "note": "Miễn phí, mã nguồn mở MIT (của Stably AI); agent chạy bên trong dùng subscription/API key của chính bạn. Có app companion iOS/Android."
+      "note": "Miễn phí, mã nguồn mở MIT (của Stably AI); agent chạy bên trong dùng subscription/API key của chính bạn. Có app companion iOS/Android.",
+      "note_en": "Free and open source (MIT, by Stably AI); the agents inside run on your own subscription/API keys. Companion app available for iOS/Android."
     },
     {
       "id": "antigravity-cli",
@@ -52,6 +59,7 @@
       "icon": "assets/icons/antigravity-cli.png",
       "type": "tool",
       "description": "Phiên bản dòng lệnh (lệnh agy) của nền tảng lập trình agent-first Antigravity của Google: mang khả năng agent của Antigravity 2.0 — suy luận nhiều bước, sửa nhiều file, gọi công cụ — vào thẳng terminal, thay thế Gemini CLI.",
+      "description_en": "The command-line edition (the `agy` command) of Google's agent-first Antigravity platform: it brings Antigravity 2.0's agent abilities — multi-step reasoning, editing many files, tool calling — straight into the terminal, replacing Gemini CLI.",
       "tags": [
         "AI Agent",
         "CLI",
@@ -67,7 +75,8 @@
       "pricing": "Freemium",
       "featured": false,
       "dateAdded": "2026-10-29",
-      "note": "Miễn phí cho cá nhân khi đăng nhập tài khoản Google; hạn mức cao hơn theo gói Google AI Pro/Ultra. Cài bằng script từ antigravity.google/cli."
+      "note": "Miễn phí cho cá nhân khi đăng nhập tài khoản Google; hạn mức cao hơn theo gói Google AI Pro/Ultra. Cài bằng script từ antigravity.google/cli.",
+      "note_en": "Free for individuals when signed in with a Google account; higher limits on the Google AI Pro/Ultra plans. Installed via the script at antigravity.google/cli."
     },
     {
       "id": "opencode",
@@ -76,6 +85,7 @@
       "icon": "assets/icons/opencode.png",
       "type": "tool",
       "description": "AI coding agent mã nguồn mở chạy trong terminal (cũng có app desktop và extension IDE): viết, sửa và debug code bằng ngôn ngữ tự nhiên, kết nối hơn 75 nhà cung cấp model như Claude, GPT, Gemini hoặc model local qua Ollama, không bị khoá vào một hãng duy nhất.",
+      "description_en": "An open-source AI coding agent that runs in the terminal (also available as a desktop app and IDE extension): write, edit and debug code in natural language, connected to 75+ model providers such as Claude, GPT, Gemini or local models via Ollama — never locked to a single vendor.",
       "tags": [
         "AI Agent",
         "Coding Agent",
@@ -91,7 +101,8 @@
       "pricing": "Freemium",
       "featured": false,
       "dateAdded": "2026-10-29",
-      "note": "Phần mềm miễn phí (MIT); chi phí chính là API/subscription của model bạn dùng, OpenCode cũng có gói Go/Zen riêng."
+      "note": "Phần mềm miễn phí (MIT); chi phí chính là API/subscription của model bạn dùng, OpenCode cũng có gói Go/Zen riêng.",
+      "note_en": "The software itself is free (MIT); the main cost is your model's API/subscription. OpenCode also offers its own Go/Zen plans."
     },
     {
       "id": "git",
@@ -100,6 +111,7 @@
       "icon": "assets/icons/git.svg",
       "type": "tool",
       "description": "Hệ thống quản lý phiên bản phân tán miễn phí và mã nguồn mở (trang chính thức git-scm.com): theo dõi lịch sử thay đổi code, làm việc với nhánh (branch), merge và cộng tác qua GitHub/GitLab.",
+      "description_en": "The free, open-source distributed version control system (official site: git-scm.com): track code change history, work with branches, merge, and collaborate via GitHub/GitLab.",
       "tags": [
         "Version Control",
         "Git",
@@ -113,7 +125,8 @@
       "pricing": "Free",
       "featured": false,
       "dateAdded": "2026-10-29",
-      "note": "Phần mềm nền tảng của hầu hết các công cụ trong danh sách này; cài kèm Git Bash trên Windows."
+      "note": "Phần mềm nền tảng của hầu hết các công cụ trong danh sách này; cài kèm Git Bash trên Windows.",
+      "note_en": "Foundational to most tools in this list; the Windows installer includes Git Bash."
     },
     {
       "id": "bruno",
@@ -122,6 +135,7 @@
       "icon": "assets/icons/bruno.png",
       "type": "software",
       "description": "API client mã nguồn mở thay thế Postman/Insomnia: chạy offline, lưu collection thành các file text .bru ngay trong thư mục project nên quản lý phiên bản bằng Git dễ dàng; hỗ trợ REST, GraphQL, gRPC và WebSocket.",
+      "description_en": "An open-source API client that replaces Postman/Insomnia: it runs offline and stores collections as plain-text .bru files right inside your project folder, so they version cleanly with Git; supports REST, GraphQL, gRPC and WebSocket.",
       "tags": [
         "API",
         "REST",
@@ -136,7 +150,8 @@
       "pricing": "Freemium",
       "featured": false,
       "dateAdded": "2026-10-29",
-      "note": "Bản mã nguồn mở MIT miễn phí, không cần tài khoản, không đồng bộ cloud; có thêm các bản trả phí Golden/Ultimate."
+      "note": "Bản mã nguồn mở MIT miễn phí, không cần tài khoản, không đồng bộ cloud; có thêm các bản trả phí Golden/Ultimate.",
+      "note_en": "The MIT open-source edition is free, needs no account and does no cloud sync; paid Golden/Ultimate editions are also available."
     },
     {
       "id": "intellij-idea",
@@ -145,6 +160,7 @@
       "icon": "assets/icons/intellij-idea.svg",
       "type": "software",
       "description": "IDE hàng đầu cho Java và Kotlin của JetBrains: gợi ý code thông minh, phân tích tĩnh, refactor mạnh, tích hợp sẵn debugger, profiler, công cụ database và HTTP Client.",
+      "description_en": "JetBrains' flagship IDE for Java and Kotlin: smart code completion, static analysis, powerful refactoring, and a built-in debugger, profiler, database tools and HTTP Client.",
       "tags": [
         "IDE",
         "Java",
@@ -159,7 +175,8 @@
       "pricing": "Freemium",
       "featured": false,
       "dateAdded": "2026-10-29",
-      "note": "Tính năng lõi miễn phí, kèm 30 ngày dùng thử bản Ultimate (trả phí dạng thuê bao)."
+      "note": "Tính năng lõi miễn phí, kèm 30 ngày dùng thử bản Ultimate (trả phí dạng thuê bao).",
+      "note_en": "Core features are free, with a 30-day trial of the paid Ultimate subscription."
     },
     {
       "id": "sublime-text",
@@ -168,6 +185,7 @@
       "icon": "assets/icons/sublime-text.png",
       "type": "software",
       "description": "Trình soạn thảo code siêu nhẹ và khởi động cực nhanh: Goto Anything, chỉnh sửa nhiều vị trí cùng lúc, Command Palette, tuỳ biến sâu bằng JSON và mở rộng bằng plugin Python qua Package Control.",
+      "description_en": "A featherweight code editor that starts almost instantly: Goto Anything, editing at multiple positions at once, Command Palette, deep customization via JSON and Python plugins through Package Control.",
       "tags": [
         "Code",
         "Editor",
@@ -181,7 +199,8 @@
       "pricing": "Paid",
       "featured": false,
       "dateAdded": "2026-10-29",
-      "note": "Tải và dùng thử miễn phí không giới hạn thời gian; cần mua license để sử dụng lâu dài."
+      "note": "Tải và dùng thử miễn phí không giới hạn thời gian; cần mua license để sử dụng lâu dài.",
+      "note_en": "Free to download and evaluate with no time limit; a license is required for continued use."
     },
     {
       "id": "internet-download-manager",
@@ -190,6 +209,7 @@
       "icon": "assets/icons/internet-download-manager.png",
       "type": "software",
       "description": "Trình quản lý tải xuống cho Windows: chia file thành nhiều luồng tải song song để tăng tốc, tự tải tiếp khi đứt mạng, hẹn giờ tải và tự bắt link tải từ Chrome, Edge, Firefox.",
+      "description_en": "A download manager for Windows: splits files into multiple parallel download threads for speed, resumes downloads after connection drops, schedules downloads and automatically captures download links from Chrome, Edge and Firefox.",
       "tags": [
         "Download",
         "IDM",
@@ -201,7 +221,8 @@
       "pricing": "Paid",
       "featured": false,
       "dateAdded": "2026-10-29",
-      "note": "Dùng thử miễn phí 30 ngày, sau đó cần mua license (có bản 1 năm và trọn đời). Chỉ hỗ trợ Windows."
+      "note": "Dùng thử miễn phí 30 ngày, sau đó cần mua license (có bản 1 năm và trọn đời). Chỉ hỗ trợ Windows.",
+      "note_en": "Free 30-day trial, then a license is required (1-year and lifetime options). Windows only."
     },
     {
       "id": "navicat-premium",
@@ -210,6 +231,7 @@
       "icon": "assets/icons/navicat-premium.png",
       "type": "software",
       "description": "Công cụ quản lý và phát triển cơ sở dữ liệu tất cả trong một: kết nối đồng thời MySQL, PostgreSQL, MariaDB, SQL Server, Oracle, SQLite, MongoDB, Redis và Snowflake từ một ứng dụng duy nhất, hỗ trợ thiết kế mô hình dữ liệu, đồng bộ và di chuyển dữ liệu.",
+      "description_en": "An all-in-one database management and development tool: connect to MySQL, PostgreSQL, MariaDB, SQL Server, Oracle, SQLite, MongoDB, Redis and Snowflake simultaneously from a single app, with data modeling, synchronization and migration tools.",
       "tags": [
         "Database",
         "SQL",
@@ -225,7 +247,8 @@
       "pricing": "Paid",
       "featured": false,
       "dateAdded": "2026-10-29",
-      "note": "Có bản dùng thử 14 ngày; ngoài bản Premium còn có bản riêng cho từng loại database và các cấp Lite/Standard/Enterprise."
+      "note": "Có bản dùng thử 14 ngày; ngoài bản Premium còn có bản riêng cho từng loại database và các cấp Lite/Standard/Enterprise.",
+      "note_en": "14-day free trial; besides Premium there are per-database editions and Lite/Standard/Enterprise tiers."
     },
     {
       "id": "habblaud",
@@ -234,6 +257,7 @@
       "icon": "assets/icons/habblaud.png",
       "type": "software",
       "description": "Văn phòng ảo pixel-art cho các agent Claude Code và Codex: mỗi project là một phòng, mỗi agent là một nhân vật hiển thị hoạt động trực tiếp, kèm thống kê token, chi phí ước tính, thời gian làm việc và mức dùng 5 giờ/tuần. Chạy 100% local, không telemetry.",
+      "description_en": "A pixel-art virtual office for Claude Code and Codex agents: each project is a room and each agent is a character showing live activity, with token statistics, estimated cost, working time and 5-hour/weekly usage levels. Runs 100% locally, no telemetry.",
       "tags": [
         "AI Agent",
         "Claude Code",
@@ -250,12 +274,15 @@
       "pricing": "Free",
       "featured": true,
       "dateAdded": "2026-10-29",
-      "note": "Miễn phí, mã nguồn mở MIT, không cần tài khoản. Cài bằng 1 prompt dán vào Claude Code/Codex, chạy tại habblaud.localhost:4747; Windows tự cài qua WSL2. Mã nguồn: github.com/marmottajr/habblaud"
+      "note": "Miễn phí, mã nguồn mở MIT, không cần tài khoản. Cài bằng 1 prompt dán vào Claude Code/Codex, chạy tại habblaud.localhost:4747; Windows tự cài qua WSL2. Mã nguồn: github.com/marmottajr/habblaud",
+      "note_en": "Free, open source (MIT), no account needed. Installs with a single prompt pasted into Claude Code/Codex and runs at habblaud.localhost:4747; on Windows it installs through WSL2. Source: github.com/marmottajr/habblaud"
     }
   ],
   "site": {
     "description": "Danh sách chọn lọc các phần mềm, extension, skill, công cụ và trang web hữu ích.",
     "tagline": "Thư viện phần mềm, extension, skill và website hữu ích của Cian",
-    "title": "CianX"
+    "title": "CianX",
+    "tagline_en": "Cian's library of useful software, extensions, skills and websites",
+    "description_en": "A curated list of useful software, extensions, skills, tools and websites."
   }
 }
