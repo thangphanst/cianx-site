@@ -28,6 +28,32 @@
   ],
   "items": [
     {
+      "id": "superpowers",
+      "name": "Superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "icon": "assets/icons/superpowers.png",
+      "type": "skill",
+      "description": "Framework kỹ năng và phương pháp luận phát triển phần mềm hoàn chỉnh cho coding agent: thay vì lao vào viết code ngay, agent được dẫn qua bước brainstorm để chốt spec cùng bạn, lập kế hoạch triển khai chi tiết, rồi thực thi bằng subagent theo TDD red/green đúng nghĩa, có review ở từng bước. Bộ skill tự kích hoạt theo ngữ cảnh (brainstorming, systematic debugging, code review, git worktree...) và cài dạng plugin cho Claude Code, Codex, Cursor, Gemini CLI, OpenCode cùng nhiều harness khác.",
+      "description_en": "A complete software development methodology for coding agents, built on a set of composable skills: instead of jumping straight into code, your agent brainstorms a spec with you, puts together a detailed implementation plan, then executes it with subagents using true red/green TDD, with reviews at every step. Its skills trigger automatically by context (brainstorming, systematic debugging, code review, git worktrees...) and it installs as a plugin for Claude Code, Codex, Cursor, Gemini CLI, OpenCode and many other harnesses.",
+      "tags": [
+        "AI Agent",
+        "Skills",
+        "Claude Code",
+        "TDD",
+        "Workflow"
+      ],
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "pricing": "Free",
+      "featured": false,
+      "dateAdded": "2026-10-30",
+      "note": "Mã nguồn mở MIT, của Jesse Vincent (obra) / Prime Radiant. Cài riêng cho từng harness; với Claude Code: /plugin install superpowers@claude-plugins-official.",
+      "note_en": "Open source under MIT, by Jesse Vincent (obra) / Prime Radiant. Installed separately for each harness; on Claude Code: /plugin install superpowers@claude-plugins-official."
+    },
+    {
       "id": "openvpn",
       "name": "OpenVPN",
       "url": "https://openvpn.net/",
