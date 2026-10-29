@@ -28,6 +28,95 @@
   ],
   "items": [
     {
+      "id": "orca",
+      "name": "Orca",
+      "url": "https://www.onorca.dev/",
+      "type": "software",
+      "description": "Môi trường desktop để chạy nhiều AI coding agent song song (Claude Code, Codex, OpenCode, Cursor CLI, Copilot...): mỗi agent làm việc trong một git worktree riêng nên không đụng file của nhau, sau đó so sánh diff và chọn kết quả tốt nhất.",
+      "tags": [
+        "AI Agent",
+        "Orchestrator",
+        "Git Worktree",
+        "Open Source"
+      ],
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "pricing": "Free",
+      "featured": false,
+      "dateAdded": "2026-10-29",
+      "note": "Miễn phí, mã nguồn mở MIT (của Stably AI); agent chạy bên trong dùng subscription/API key của chính bạn. Có app companion iOS/Android."
+    },
+    {
+      "id": "antigravity-cli",
+      "name": "Antigravity CLI",
+      "url": "https://antigravity.google/",
+      "type": "tool",
+      "description": "Phiên bản dòng lệnh (lệnh agy) của nền tảng lập trình agent-first Antigravity của Google: mang khả năng agent của Antigravity 2.0 — suy luận nhiều bước, sửa nhiều file, gọi công cụ — vào thẳng terminal, thay thế Gemini CLI.",
+      "tags": [
+        "AI Agent",
+        "CLI",
+        "Google",
+        "Gemini",
+        "Terminal"
+      ],
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "pricing": "Freemium",
+      "featured": false,
+      "dateAdded": "2026-10-29",
+      "note": "Miễn phí cho cá nhân khi đăng nhập tài khoản Google; hạn mức cao hơn theo gói Google AI Pro/Ultra. Cài bằng script từ antigravity.google/cli."
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "url": "https://opencode.ai/",
+      "type": "tool",
+      "description": "AI coding agent mã nguồn mở chạy trong terminal (cũng có app desktop và extension IDE): viết, sửa và debug code bằng ngôn ngữ tự nhiên, kết nối hơn 75 nhà cung cấp model như Claude, GPT, Gemini hoặc model local qua Ollama, không bị khoá vào một hãng duy nhất.",
+      "tags": [
+        "AI Agent",
+        "Coding Agent",
+        "CLI",
+        "Terminal",
+        "Open Source"
+      ],
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "pricing": "Freemium",
+      "featured": false,
+      "dateAdded": "2026-10-29",
+      "note": "Phần mềm miễn phí (MIT); chi phí chính là API/subscription của model bạn dùng, OpenCode cũng có gói Go/Zen riêng."
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "url": "https://git-scm.com/",
+      "type": "tool",
+      "description": "Hệ thống quản lý phiên bản phân tán miễn phí và mã nguồn mở (trang chính thức git-scm.com): theo dõi lịch sử thay đổi code, làm việc với nhánh (branch), merge và cộng tác qua GitHub/GitLab.",
+      "tags": [
+        "Version Control",
+        "Git",
+        "Open Source"
+      ],
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "pricing": "Free",
+      "featured": false,
+      "dateAdded": "2026-10-29",
+      "note": "Phần mềm nền tảng của hầu hết các công cụ trong danh sách này; cài kèm Git Bash trên Windows."
+    },
+    {
       "id": "bruno",
       "name": "Bruno",
       "url": "https://www.usebruno.com/",
