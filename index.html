@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CianX — Thư viện phần mềm, extension, skill & website</title>
+<meta name="description" content="Danh sách chọn lọc các phần mềm, extension, skill, công cụ và trang web hữu ích.">
+<meta property="og:title" content="CianX">
+<meta property="og:description" content="Thư viện phần mềm, extension, skill và website hữu ích của Cian">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cianx.site/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="./" aria-label="CianX"><span class="logo-mark">X</span><span>Cian<em>X</em></span></a>
+  <button id="themeToggle" class="icon-btn" type="button" aria-label="Đổi giao diện sáng/tối">☀️</button>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Thư viện của Cian</h1>
+    <p id="tagline">Phần mềm, extension, skill, công cụ và website hữu ích — được chọn lọc và cập nhật thường xuyên.</p>
+    <div class="search-wrap">
+      <span aria-hidden="true">🔍</span>
+      <input id="search" type="search" placeholder="Tìm theo tên, mô tả, tag..." autocomplete="off">
+      <kbd>Ctrl K</kbd>
+    </div>
+    <div id="stats" class="stats"></div>
+  </section>
+
+  <nav id="filters" class="filters" aria-label="Lọc theo loại"></nav>
+
+  <section class="toolbar">
+    <span id="resultCount"></span>
+    <label>Sắp xếp
+      <select id="sort">
+        <option value="newest">Mới thêm</option>
+        <option value="name">Tên A–Z</option>
+        <option value="featured">Nổi bật trước</option>
+      </select>
+    </label>
+  </section>
+
+  <section id="grid" class="grid" aria-live="polite"></section>
+  <p id="empty" class="empty" hidden>Không tìm thấy mục nào phù hợp. Thử từ khoá hoặc bộ lọc khác nhé.</p>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> CianX · <a href="https://cianx.site/">cianx.site</a> · Cập nhật qua GitHub + Cloudflare Pages</p>
+</footer>
+
+<dialog id="detail">
+  <button class="icon-btn close" type="button" aria-label="Đóng">✕</button>
+  <div id="detailBody"></div>
+</dialog>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>
