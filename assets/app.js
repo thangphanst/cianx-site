@@ -4,13 +4,9 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const favicon=url=>{try{return `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&sz=128`}catch{return 'favicon.svg'}};
 const cat=id=>state.data.categories.find(c=>c.id===id)||{label:id,icon:'🔗'};
 const priceClass=p=>({'Free':'price-free','Freemium':'price-freemium','Paid':'price-paid'}[p]||'');
-const isNew=i=>i.dateAdded&&i.dateAdded===state.maxDate;
 
 function badges(i){
-  let b='';
-  if(isNew(i))b+='<span class="badge badge-new">Mới</span>';
-  if(i.featured)b+='<span class="badge badge-star">★ Nổi bật</span>';
-  return b?`<div class="badges">${b}</div>`:'';
+  return i.featured?'<div class="badges"><span class="badge badge-star">★ Nổi bật</span></div>':'';
 }
 function featureHTML(i){
   return `<article class="feature-card" data-id="${esc(i.id)}" tabindex="0" role="button" aria-label="${esc(i.name)}">
