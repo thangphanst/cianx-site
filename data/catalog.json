@@ -142,7 +142,7 @@
       "id": "intellij-idea",
       "name": "IntelliJ IDEA",
       "url": "https://www.jetbrains.com/idea/",
-      "icon": "assets/icons/intellij-idea.png",
+      "icon": "assets/icons/intellij-idea.svg",
       "type": "software",
       "description": "IDE hàng đầu cho Java và Kotlin của JetBrains: gợi ý code thông minh, phân tích tĩnh, refactor mạnh, tích hợp sẵn debugger, profiler, công cụ database và HTTP Client.",
       "tags": [
