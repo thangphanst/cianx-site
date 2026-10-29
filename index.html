@@ -4,58 +4,119 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CianX — Thư viện phần mềm, extension, skill & website</title>
-<meta name="description" content="Danh sách chọn lọc các phần mềm, extension, skill, công cụ và trang web hữu ích.">
-<meta property="og:title" content="CianX">
-<meta property="og:description" content="Thư viện phần mềm, extension, skill và website hữu ích của Cian">
+<meta name="description" content="Danh sách chọn lọc các phần mềm, extension, skill, công cụ và trang web hữu ích của Cian.">
+<meta name="theme-color" content="#0b0d0a">
+<link rel="canonical" href="https://cianx.site/">
+<meta property="og:title" content="CianX — Thư viện của Cian">
+<meta property="og:description" content="Phần mềm, extension, skill, công cụ và website hữu ích — được chọn lọc và cập nhật thường xuyên.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cianx.site/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
+<div class="bg-glow" aria-hidden="true"></div>
+
 <header class="topbar">
-  <a class="logo" href="./" aria-label="CianX"><span class="logo-mark">X</span><span>Cian<em>X</em></span></a>
-  <button id="themeToggle" class="icon-btn" type="button" aria-label="Đổi giao diện sáng/tối">☀️</button>
+  <div class="topbar-inner">
+    <a class="logo" href="./" aria-label="CianX — trang chủ">
+      <span class="logo-mark">X</span>
+      <span class="logo-text">Cian<em>X</em></span>
+    </a>
+    <nav class="topnav" aria-label="Điều hướng">
+      <a href="#featuredSection">Nổi bật</a>
+      <a href="#catalogSection">Danh mục</a>
+    </nav>
+    <div class="topbar-actions">
+      <span id="topCount" class="count-pill" title="Tổng số mục đã lưu"></span>
+      <button id="themeToggle" class="icon-btn" type="button" aria-label="Đổi giao diện sáng / tối">☀️</button>
+    </div>
+  </div>
 </header>
 
 <main>
   <section class="hero">
-    <h1>Thư viện của Cian</h1>
-    <p id="tagline">Phần mềm, extension, skill, công cụ và website hữu ích — được chọn lọc và cập nhật thường xuyên.</p>
+    <span class="hero-badge">✦ Thư viện cá nhân của Cian</span>
+    <h1>Mọi công cụ tin dùng,<br><span class="grad">gom ở một nơi.</span></h1>
+    <p id="tagline" class="hero-sub">Phần mềm, extension, skill, công cụ và website hữu ích — được chọn lọc và cập nhật thường xuyên.</p>
     <div class="search-wrap">
-      <span aria-hidden="true">🔍</span>
-      <input id="search" type="search" placeholder="Tìm theo tên, mô tả, tag..." autocomplete="off">
+      <span class="search-icon" aria-hidden="true">🔍</span>
+      <input id="search" type="search" placeholder="Tìm theo tên, mô tả, tag… (ví dụ: database, AI agent)" autocomplete="off" aria-label="Tìm kiếm">
       <kbd>Ctrl K</kbd>
     </div>
     <div id="stats" class="stats"></div>
   </section>
 
-  <nav id="filters" class="filters" aria-label="Lọc theo loại"></nav>
-
-  <section class="toolbar">
-    <span id="resultCount"></span>
-    <label>Sắp xếp
-      <select id="sort">
-        <option value="newest">Mới thêm</option>
-        <option value="name">Tên A–Z</option>
-        <option value="featured">Nổi bật trước</option>
-      </select>
-    </label>
+  <section id="featuredSection" class="featured" hidden>
+    <div class="section-head">
+      <h2><span class="sec-icon">⭐</span> Nổi bật</h2>
+      <span class="section-note">Những mục đáng chú ý nhất</span>
+    </div>
+    <div id="featuredGrid" class="featured-grid"></div>
   </section>
 
-  <section id="grid" class="grid" aria-live="polite"></section>
-  <p id="empty" class="empty" hidden>Không tìm thấy mục nào phù hợp. Thử từ khoá hoặc bộ lọc khác nhé.</p>
+  <section id="catalogSection" class="catalog">
+    <div class="section-head">
+      <h2><span class="sec-icon">🗂️</span> Danh mục</h2>
+      <span id="resultCount" class="section-note"></span>
+    </div>
+    <div class="filterbar">
+      <nav id="filters" class="filters" aria-label="Lọc theo loại"></nav>
+      <div class="toolbar">
+        <div class="view-toggle" role="group" aria-label="Kiểu hiển thị">
+          <button id="viewGrid" class="view-btn" type="button" aria-pressed="true" title="Dạng lưới">▦</button>
+          <button id="viewList" class="view-btn" type="button" aria-pressed="false" title="Dạng danh sách">☰</button>
+        </div>
+        <label class="sort-label">Sắp xếp
+          <select id="sort" aria-label="Sắp xếp">
+            <option value="newest">Mới thêm</option>
+            <option value="name">Tên A–Z</option>
+            <option value="featured">Nổi bật trước</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <div id="grid" class="grid" aria-live="polite"></div>
+    <div id="empty" class="empty" hidden>
+      <div class="empty-icon">🗃️</div>
+      <h3>Không tìm thấy mục nào</h3>
+      <p>Thử từ khoá khác, hoặc bỏ bớt bộ lọc nhé.</p>
+      <button id="clearFilters" class="btn-accent" type="button">Xoá bộ lọc</button>
+    </div>
+  </section>
 </main>
 
 <footer>
-  <p>© <span id="year"></span> CianX · <a href="https://cianx.site/">cianx.site</a> · Cập nhật qua GitHub + Cloudflare Pages</p>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="logo" href="./"><span class="logo-mark">X</span><span class="logo-text">Cian<em>X</em></span></a>
+      <p>Thư viện phần mềm, extension, skill và website hữu ích của Cian — cập nhật liên tục.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Khám phá</h4>
+      <a href="#featuredSection">Mục nổi bật</a>
+      <a href="#catalogSection">Toàn bộ danh mục</a>
+    </div>
+    <div class="footer-col">
+      <h4>Hệ thống</h4>
+      <a href="https://github.com/thangphanst/cianx-site" target="_blank" rel="noopener noreferrer">Mã nguồn GitHub</a>
+      <a href="https://cianx.site/data/catalog.json" target="_blank" rel="noopener noreferrer">Dữ liệu (JSON)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© <span id="year"></span> CianX · Host trên Cloudflare Pages · Cập nhật tự động qua GitHub</div>
 </footer>
+
+<button id="toTop" class="to-top" type="button" aria-label="Về đầu trang">↑</button>
 
 <dialog id="detail">
   <button class="icon-btn close" type="button" aria-label="Đóng">✕</button>
   <div id="detailBody"></div>
 </dialog>
 
+<noscript><p style="text-align:center;padding:20px">Trang này cần JavaScript để hiển thị danh mục.</p></noscript>
 <script src="assets/app.js" defer></script>
 </body>
 </html>
