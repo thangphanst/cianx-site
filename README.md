@@ -18,6 +18,11 @@ Thư viện / catalog cá nhân của Cian: phần mềm, extension, skill, côn
 3. Nếu cần loại mới: thêm vào `categories` trong cùng file + tuỳ chỉnh giao diện nếu cần.
 4. Commit + push lên `main`, chờ Cloudflare Pages deploy (~1 phút), kiểm tra https://cianx.site
 
+## Chống cache (quan trọng)
+
+- File `_headers` đặt `Cache-Control: max-age=0, must-revalidate` cho HTML, `data/` và `assets/` — trình duyệt (đặc biệt là điện thoại) phải kiểm tra bản mới mỗi lần mở trang, tránh kẹt bản cũ nhiều giờ như mặc định của Pages (assets từng bị cache max-age=14400).
+- Lớp bảo hiểm thứ hai: `index.html` gọi CSS/JS kèm `?v=N`. **Mỗi lần sửa `assets/styles.css` hoặc `assets/app.js` phải tăng N lên 1** trong index.html khi commit.
+
 ## Cloudflare Pages settings
 
 - Framework preset: None

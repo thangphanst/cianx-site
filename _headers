@@ -1,0 +1,14 @@
+# Cache policy for cianx.site (Cloudflare Pages):
+# HTML, data and assets must be revalidated on every visit so design/data
+# updates show up immediately on mobile browsers instead of being cached
+# for hours (Pages' default asset cache is max-age=14400).
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+/data/*
+  Cache-Control: public, max-age=0, must-revalidate
+/assets/*
+  Cache-Control: public, max-age=0, must-revalidate
+/favicon.svg
+  Cache-Control: public, max-age=0, must-revalidate
