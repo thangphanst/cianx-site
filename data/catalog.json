@@ -78,7 +78,7 @@
       "id": "opencode",
       "name": "OpenCode",
       "url": "https://opencode.ai/",
-      "icon": "assets/icons/opencode.svg",
+      "icon": "assets/icons/opencode.png",
       "type": "tool",
       "description": "AI coding agent mã nguồn mở chạy trong terminal (cũng có app desktop và extension IDE): viết, sửa và debug code bằng ngôn ngữ tự nhiên, kết nối hơn 75 nhà cung cấp model như Claude, GPT, Gemini hoặc model local qua Ollama, không bị khoá vào một hãng duy nhất.",
       "tags": [
@@ -124,7 +124,7 @@
       "id": "bruno",
       "name": "Bruno",
       "url": "https://www.usebruno.com/",
-      "icon": "assets/icons/bruno.svg",
+      "icon": "assets/icons/bruno.png",
       "type": "software",
       "description": "API client mã nguồn mở thay thế Postman/Insomnia: chạy offline, lưu collection thành các file text .bru ngay trong thư mục project nên quản lý phiên bản bằng Git dễ dàng; hỗ trợ REST, GraphQL, gRPC và WebSocket.",
       "tags": [
@@ -147,7 +147,7 @@
       "id": "intellij-idea",
       "name": "IntelliJ IDEA",
       "url": "https://www.jetbrains.com/idea/",
-      "icon": "assets/icons/intellijidea.svg",
+      "icon": "assets/icons/intellij-idea.png",
       "type": "software",
       "description": "IDE hàng đầu cho Java và Kotlin của JetBrains: gợi ý code thông minh, phân tích tĩnh, refactor mạnh, tích hợp sẵn debugger, profiler, công cụ database và HTTP Client.",
       "tags": [
@@ -170,7 +170,7 @@
       "id": "sublime-text",
       "name": "Sublime Text",
       "url": "https://www.sublimetext.com/",
-      "icon": "assets/icons/sublimetext.svg",
+      "icon": "assets/icons/sublime-text.png",
       "type": "software",
       "description": "Trình soạn thảo code siêu nhẹ và khởi động cực nhanh: Goto Anything, chỉnh sửa nhiều vị trí cùng lúc, Command Palette, tuỳ biến sâu bằng JSON và mở rộng bằng plugin Python qua Package Control.",
       "tags": [
