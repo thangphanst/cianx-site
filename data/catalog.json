@@ -28,6 +28,32 @@
   ],
   "items": [
     {
+      "id": "shardbrowser",
+      "name": "ShardBrowser",
+      "url": "https://shardbrowser.com/",
+      "icon": "assets/icons/shardbrowser.png",
+      "type": "software",
+      "description": "Trình duyệt anti-detect miễn phí của đội ProxyShard: launcher mã nguồn mở (MIT) điều khiển một engine Chromium đã vá ở tầng engine để giả lập fingerprint trình duyệt (WebGL/WebGPU, Client Hints, font chữ, TLS), kèm sẵn hơn 220 hồ sơ thiết bị thật. Không giới hạn số profile, không cần tài khoản; vận hành profile qua app desktop, API cục bộ, MCP server hoặc SDK (Python, Node.js, Rust), tương thích Playwright/Puppeteer/Selenium, có tính năng ghi thao tác để tự động hoá no-code và đồng bộ thao tác trên nhiều cửa sổ — phục vụ web scraping, automation và multi-accounting.",
+      "description_en": "A free anti-detect browser from the ProxyShard team: an open-source launcher (MIT) driving a patched Chromium engine with engine-level browser fingerprint spoofing (WebGL/WebGPU, Client Hints, fonts, TLS) and 220+ bundled real-device profiles. Unlimited profiles and no account required; operate profiles from the desktop app, a local API, an MCP server or SDKs (Python, Node.js, Rust), with Playwright/Puppeteer/Selenium support, no-code action recording and synchronized windows — built for web scraping, automation and multi-accounting.",
+      "tags": [
+        "Antidetect",
+        "Browser",
+        "Automation",
+        "Web Scraping",
+        "MCP"
+      ],
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "pricing": "Free",
+      "featured": false,
+      "dateAdded": "2026-10-30",
+      "note": "Tên gọi cũ là ShardX Launcher (đổi tên từ bản 2.1.0). Launcher mở nguồn theo MIT nhưng engine Chromium là bản đóng nguồn do launcher tự tải và cập nhật; nhà phát triển kiếm doanh thu từ dịch vụ proxy ProxyShard bán riêng. Bản macOS chỉ chạy trên Apple Silicon; bản cài Windows/macOS chưa được ký số/notarize.",
+      "note_en": "Formerly called ShardX Launcher (renamed in v2.1.0). The launcher is MIT open source, but the Chromium engine is a closed-source binary that the launcher downloads and updates itself; the vendor makes its money from the separate ProxyShard proxy service. The macOS build is Apple Silicon only, and the Windows/macOS installers are not code-signed/notarized."
+    },
+    {
       "id": "graphify",
       "name": "Graphify",
       "url": "https://github.com/Graphify-Labs/graphify",
