@@ -28,6 +28,32 @@
   ],
   "items": [
     {
+      "id": "graphify",
+      "name": "Graphify",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "icon": "assets/icons/graphify.png",
+      "type": "skill",
+      "description": "Skill cho Claude Code (đồng thời hỗ trợ Cursor, Codex, Gemini CLI) biến bất kỳ thư mục nào — codebase, tài liệu, SQL schema, config, PDF, thậm chí ảnh chụp bảng trắng — thành một knowledge graph truy vấn được. Phân tích AST hoàn toàn cục bộ bằng tree-sitter, không cần vector store: gõ /graphify ngay trong thư mục dự án và nhận về graph tương tác (graph.html), vault Obsidian, bộ wiki cho agent đọc và file graph.json lưu bền qua nhiều phiên, để agent trả lời các câu hỏi về cấu trúc dự án mà không phải đọc lại toàn bộ file.",
+      "description_en": "A skill for Claude Code (also supporting Cursor, Codex and Gemini CLI) that turns any folder — a codebase, docs, SQL schemas, configs, PDFs, even whiteboard photos — into a queryable knowledge graph. Parsing is fully local and deterministic (tree-sitter AST) with no vector store: run /graphify inside a project folder and get back an interactive graph (graph.html), an Obsidian vault, an agent-readable wiki and a persistent graph.json that survives across sessions, so agents can answer structural questions without re-reading every file.",
+      "tags": [
+        "Knowledge Graph",
+        "Claude Code",
+        "Skills",
+        "AST",
+        "GraphRAG"
+      ],
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "pricing": "Free",
+      "featured": false,
+      "dateAdded": "2026-10-30",
+      "note": "Mã nguồn mở Apache-2.0 (Graphify Labs). Cần Claude Code và Python 3.10+; cài bằng lệnh: pip install graphifyy && graphify install (gói PyPI tạm thời mang tên graphifyy trong lúc chờ lấy lại tên graphify). Nhóm phát triển công bố tiết kiệm tới 71,5 lần token mỗi truy vấn so với đọc file thô.",
+      "note_en": "Open source under Apache-2.0 (Graphify Labs). Requires Claude Code and Python 3.10+; install with: pip install graphifyy && graphify install (the PyPI package is temporarily named graphifyy while the graphify name is being reclaimed). The authors report up to 71.5x fewer tokens per query compared with reading the raw files."
+    },
+    {
       "id": "artemis",
       "name": "ARTEMIS",
       "url": "https://github.com/google/artemis",
