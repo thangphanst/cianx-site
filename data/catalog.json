@@ -28,6 +28,33 @@
   ],
   "items": [
     {
+      "id": "artemis",
+      "name": "ARTEMIS",
+      "url": "https://github.com/google/artemis",
+      "icon": "assets/icons/artemis.png",
+      "type": "tool",
+      "description": "Framework agent mã nguồn mở của Google giúp trợ lý AI và bộ kiểm thử dùng điện thoại Android thật như con người: nhận yêu cầu bằng ngôn ngữ tự nhiên rồi tự mở app, chạm, vuốt, nhập liệu và kiểm tra kết quả, đồng thời thu thập ảnh chụp màn hình và Logcat. Có hai chế độ Flash (vòng lặp phản ứng nhanh, 3–5 giây mỗi bước) và Pro (lập kế hoạch – thực thi – kiểm tra cho tác vụ dài). Kết nối qua MCP với Antigravity, Claude Code, Codex, Cursor..., hoặc dùng qua web console, CLI và Python SDK; Google công bố đạt 99%+ trên benchmark AndroidWorld.",
+      "description_en": "Google's open-source agent framework that lets AI assistants and test suites use real Android phones like a human: it takes natural-language requests, then opens apps, taps, swipes, types and verifies the results on its own, capturing screenshots and Logcat along the way. Two modes: Flash (a reactive loop at 3–5 seconds per step) and Pro (planner–operator–checker for long tasks). It connects over MCP to Antigravity, Claude Code, Codex, Cursor and more, or runs via its web console, CLI and Python SDK; Google reports a 99%+ success rate on the AndroidWorld benchmark.",
+      "tags": [
+        "AI Agent",
+        "Android",
+        "Automation",
+        "MCP",
+        "Testing"
+      ],
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android"
+      ],
+      "pricing": "Free",
+      "featured": false,
+      "dateAdded": "2026-10-30",
+      "note": "Mã nguồn mở Apache-2.0 của Google. Cần điện thoại Android thật hoặc emulator đã bật USB debugging, Python 3.12+ và API key của một model multimodal (Gemini, Claude, GPT-4o, Qwen-VL...) — chi phí model do bạn tự trả theo nhà cung cấp. Hiện chỉ hỗ trợ Android, iOS đang trong roadmap.",
+      "note_en": "Open source under Apache-2.0 by Google. Requires a real Android phone or an emulator with USB debugging enabled, Python 3.12+, and an API key for a multimodal model (Gemini, Claude, GPT-4o, Qwen-VL...) — model costs are billed to your own provider account. Android only for now; iOS is on the roadmap."
+    },
+    {
       "id": "claude-code-game-studios",
       "name": "Claude Code Game Studios",
       "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
